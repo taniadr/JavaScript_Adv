@@ -1,0 +1,6 @@
+
+1st. Pattern: Prototype-Class pattern 
+
+2nd. Pattern: Constructor pattern: same concepts as Java, using extend to benefit from upper classes, and method super() to call the constructor of the fathers. 
+
+3rd. Pattern: Singleton - doesn't allow multiple heritance 
