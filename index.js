@@ -1,6 +1,6 @@
 /*This is a document to test some things of ES6 and above*/
 /*Using basics from https://javascript.info/ javascript Fundamentals */
-
+/*MedLogger integrated plataform */
 "use strict";
 
 let takenMed = {
@@ -22,9 +22,9 @@ function Med(name, dosage, unit){
     }
     this.patientDaily = []
 }
+//TESTSSSSSSSS
 
-/*output do console*/
 let fichario = new Med("vyvanse", 50, "mg");
-console.log(fichario);                                              // Object { name: "vyvanse", dosage: 50, unit: "mg", patientUsage: patientUsage(), patientDaily: [] }
-fichario.patientUsage = new fichario.patientUsage(1, "09:00");      //Object { dailyFrequency: 1, dueTime: "09:00" }
-console.log(fichario.patientUsage);                                 //Object { dailyFrequency: 1, dueTime: "09:00" }
+    console.log(fichario);                                              
+fichario.patientUsage = new fichario.patientUsage(1, "09:00");      
+    console.log(fichario.patientUsage);
