@@ -1,30 +1,52 @@
-/*This is a document to test some things of ES6 and above*/
-/*Using basics from https://javascript.info/ javascript Fundamentals */
-/*MedLogger integrated plataform */
 "use strict";
-
-let takenMed = {
-    name : "Vyvanse",
-    dosage : 50,
-    unit : "mg",
-    dailyFrequency : 1,
-    dueTime : "09:00",
-    takenTime : ""
-};
-/*Object definition*/
-function Med(name, dosage, unit){
+//I might need to use FUNCTION EXPRESSION HERE
+let Med = function (name, dosage, unit){
     this.name = name;
     this.dosage = dosage;
     this.unit = unit;
-    this.patientUsage = function(dailyFrequency, dueTime){
+    //if doesn`t initiate, we won`t use 
+    this.posology = function (dailyFrequency, dueTime) { 
         this.dailyFrequency = dailyFrequency;
         this.dueTime = dueTime;
     }
-    this.patientDaily = []
+    //number will be passed by the catalogue handler function
+    this.id = function (medNumberIdentification) {
+        this.id = medNumberIdentification;
+    }
+    this.technicalDetails = function (param, param2, param3){
+        this.substance = param;
+        this.category = param2;
+        this.lab = param3;
+    }
+};
+
+
+//vector will store the meds, no datatype declaration needed, remember
+const catalogue = [];
+catalogue[0] = new Med("Secret", 70, "mg");
+catalogue[0].id = new catalogue[0].id("001");
+
+catalogue[1] = new Med("Secret", 50, "mg");
+catalogue[1].id = new catalogue[1].id("002");
+
+catalogue[2] = new Med("Secret", 25, "mg");
+catalogue[2].id = new catalogue[2].id("003");
+
+
+
+
+
+
+
+function MedUpper() {
+    return 0;
 }
-//TESTSSSSSSSS
+
+
+let hashMed = new MedUpper();
+
 
 let fichario = new Med("vyvanse", 50, "mg");
-    console.log(fichario);                                              
-fichario.patientUsage = new fichario.patientUsage(1, "09:00");      
-    console.log(fichario.patientUsage);
+console.log(fichario);
+fichario.patientUsage = new fichario.posology(1, "09:00");
+console.log(fichario.patientUsage);
