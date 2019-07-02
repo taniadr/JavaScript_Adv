@@ -22,6 +22,7 @@ let Med = function (name, dosage, unit){
 
 
 //vector will store the meds, no datatype declaration needed, remember
+//put the initialization below in another file later on 
 const catalogue = [];
 catalogue[0] = new Med("Secret", 70, "mg");
 catalogue[0].id = new catalogue[0].id("001");
@@ -31,6 +32,7 @@ catalogue[1].id = new catalogue[1].id("002");
 
 catalogue[2] = new Med("Secret", 25, "mg");
 catalogue[2].id = new catalogue[2].id("003");
+
 
 
 
